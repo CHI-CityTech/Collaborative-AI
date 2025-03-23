@@ -92,6 +92,8 @@ After your proposal is complete:
 - You will officially onboard into your team or project cluster
 - Work begins, with regular opportunities for feedback, documentation, and revision
 
+Example project proposals can be found in the [Student Research Repository](https://github.com/CHI-CityTech/StudentResearch/tree/main/Proposals_Spring_2025)  
+
 ---
 
 ## 🌱 Why This Process?
