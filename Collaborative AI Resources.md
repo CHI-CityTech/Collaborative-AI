@@ -1,13 +1,15 @@
 # 📘 Collaborative AI Resources
 
-This resource provides a comprehensive and evolving set of materials for exploring human–AI collaboration through the Balanced Blended Space (BBS) framework. It includes curriculum for both introductory and intermediate courses, research tools, theoretical foundations, and access to active meta-projects where AI is treated not merely as a tool, but as a collaborative partner. Designed under the principles of the Center for Holistic Integration (CHI), this repository supports cross-disciplinary learning, open experimentation, and real-world implementation. Materials include lesson plans, GitHub project templates, performance environments, syntax development, and invitations to join or extend ongoing collaborative research.  We divide these resources into several broad categories:  
+This Open Educational Resource provides a comprehensive and evolving set of materials for exploring human–AI collaboration through the Balanced Blended Space (BBS) framework. It includes curriculum for both introductory and intermediate courses, research tools, theoretical foundations, and access to active meta-projects where AI is treated not merely as a tool, but as a collaborative partner. Designed under the principles of the Center for Holistic Integration (CHI), this repository supports cross-disciplinary learning, open experimentation, and real-world implementation. Materials include lesson plans, GitHub project templates, performance environments, syntax development, and invitations to join or extend ongoing collaborative research.  We divide these resources into several broad categories.
 
-## 📚 Collaborative AI – Top-Level Structure
+
+## 📚 Collaborative AI - Resources and Opportunities  
 
 This Open Educational Resource is organized into three primary categories, each focused on a different mode of engagement with Collaborative AI. All supporting tools, templates, and repositories are nested within these categories.  
 1. [Curriculum : Teaching CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-1-curriculum-teaching-collaborative-ai)
 2. [Frameworks: Understanding CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-2-frameworks-understanding-collaborative-ai)
 3. [Applied Projects: Practicing CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-3-applied-projects-practicing-collaborative-ai)
+4. [Existing Projects: Collaborating with other CAI investigations]
 
 In addition, as part of our call for participation, we provide a list of current and proposed projects, each performing an investigation into some aspect of AI collaboration.  All projects contribute to the larger BBS Meta-project by proving that collaboration is possible in each area, as well as defining the collaborative environment that they used.  
 
@@ -71,7 +73,7 @@ These creative and research-driven meta-projects generate performances, narrativ
   A diverse and evolving collection of cross-disciplinary investigations and prototype efforts.  
   Repository: [Student Research](https://github.com/CHI-CityTech/StudentResearch)
 
-## 🌐 Collaboration, Meta-Projects & Expansion
+### 🌐 4. Collaboration, Meta-Projects & Expansion
 
 This Open Educational Resource is not just a collection of static materials that you can use within your own pedagogical efforts (although we strongly support you to use it in this way!)—it is an **invitation to participate** in an active, interdisciplinary investigation of Collaborative AI. In the spirit of the **Center for Holistic Integration (CHI)**, we welcome contributors from all disciplines to explore, expand, and co-develop the Balanced Blended Space (BBS) framework and its applications.
 
