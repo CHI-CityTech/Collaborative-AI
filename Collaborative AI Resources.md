@@ -9,7 +9,9 @@ This Open Educational Resource is organized into three primary categories, each 
 2. [Frameworks: Understanding CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-2-frameworks-understanding-collaborative-ai)
 3. [Applied Projects: Practicing CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-3-applied-projects-practicing-collaborative-ai)
 
-In addition, as part of our call for participation, we provide a list of currwnt and proposed projects, each performaning an investigation into 
+In addition, as part of our call for participation, we provide a list of current and proposed projects, each performing an investigation into some aspect of AI collaboration.  All projects contribute to the larger BBS Meta-project by proving that collaboration is possible in each area, as well as defining the collaborative environment that they used.  
+
+---
 
 ### 📘 1. Curriculum: Teaching Collaborative AI
 
