@@ -88,44 +88,6 @@ Explore ongoing and upcoming meta-projects in our
 [Spring 2025 Research Overview](https://github.com/CHI-CityTech/StudentResearch/discussions) *(link to be updated)*.  
 These initiatives are structured to support a wide range of participation types and project timelines.
 
-
-# 🎓 Collaborative AI Curriculum
-
-This repository currently links to a growing suite of educational materials developed to support instruction in AI across general education and project-based creative technology settings. All courses are aligned with the principles of the Balanced Blended Space (BBS) framework and the Center for Holistic Integration (CHI).
-
----
-
-## 📘 Introduction to Artificial Intelligence
-
-An interdisciplinary general education course that introduces the foundational principles, functions, and implications of artificial intelligence across fields.
-
-**Key Features:**
-- Modular weekly topics covering history, logic, machine learning, ethics, and human contexts
-- Introductory coding exercises and tool exploration (e.g., ChatGPT, DALL·E)
-- Media literacy and critical AI analysis
-- Group discussions and cross-disciplinary assignments
-- Final reflective portfolio and concept map
-
----
-
-## 📗 Collaborative AI
-
-An intermediate, project-driven course that treats AI as a creative and computational collaborator within BBS-informed environments.
-
-**Key Features:**
-- Exercises in mediation pathway structures and iterative co-development
-- Emphasis on balance and feedback loops between human and machine contributions
-- AI-supported writing, design, music, and performance tasks
-- Individual and group-based project development using GitHub
-- Final deliverable involves integrated AI-human prototype and reflection
-
----
-
-📎 For full syllabi, lesson plans, and instructional support materials, visit the  
-[AI Curriculum Repository](https://github.com/CHI-CityTech/AI-Curriculum) *(link placeholder)*
-
-Additional courses and extensions are under development and will be integrated as part of CHI’s growing collaborative infrastructure.  
-
 ## 🎭 Meta-Projects & Live Testing Environments
 
 This OER supports a constellation of meta-projects designed to actively test the BBS framework, evaluate the BRPS system, and provide real-world contexts for collaborative AI experimentation. These meta-projects are diverse in form but unified in their commitment to **cross-disciplinary engagement**, **real-world application**, and **systemic integration**.
