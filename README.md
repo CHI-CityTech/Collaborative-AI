@@ -6,9 +6,19 @@
 
 ## Introduction to the Open Educational Resource on Collaborative AI
 
-The rapid advancement of artificial intelligence is reshaping creative, academic, and technological landscapes across every discipline. We watch as new tools emerge, offering unprecedented capabilities in automation, analysis, and content generation. Yet, most frameworks position AI as a subordinate resource—something to be used, directed, or controlled for efficiency. This Open Educational Resource (OER) challenges that paradigm, introducing the **Balanced Blended Space (BBS)** framework, a model whose conclusions imply that AI should be treated as a collaborative partner rather than a passive, albeit increasingly powerful tool.
+This OER serves not only as a resource but as an **invitation to join in our exploration of Collaborative AI** within the context of **Balanced Blended Space (BBS)**. It is part of an ongoing investigation into how intelligence—both human and artificial—can meaningfully interact through **symmetrical mediation pathways**, under the guiding philosophy of the **Center for Holistic Integration (CHI)**.
 
-At the core of this framework is the principle of **balance**, where computation and cognitive human intelligence exist in a mutually influential relationship rather than a hierarchical one. Instead of humans dictating and AI responding, BBS suggests an alternate approach: one that fosters equitable interactions along well-defined **mediation pathway structures** through which both intelligences contribute to creative and analytical processes. By rethinking how we interact with AI, we shift the focus from efficiency toward **co-development, adaptation, and exploration**, where the contributions of both intelligences are dynamically weighted and refined.
+The work demonstrated here links directly to **active meta-projects** (such as the [Blended Shadow Puppet](https://github.com/CHI-CityTech/Blended-Shadow-Puppet)), where real-world scenarios test various configurations of human–AI collaboration. One of our key efforts is to evaluate the effectiveness of an **exhaustive syntax for describing mediation pathways**, while acknowledging its limits under principles such as **Gödelian incompleteness**.
+
+---
+
+## Core Principles of the Center for Holistic Integration (CHI)
+
+1. **Holism** – Integration across all disciplines and domains.  
+2. **Meta-Projects** – Creating expansive, interrelated project structures.  
+3. **Voluntary Participation** – Open access to contribute and collaborate.  
+4. **Integration, not Reinvention** – Build on existing technologies and methods.  
+5. **Scalability** – Designed to support large, interdisciplinary growth.  
 
 ---
 
@@ -69,10 +79,10 @@ The **BBS framework** is not a static theory—it is an **applied methodology** 
 
 This OER is part of an active and ongoing **meta-project** organized under the [Center for Holistic Integration (CHI)](https://github.com/CHI-CityTech). CHI operates under five core principles:
 
-1. **Holism** – Integration across all disciplines and domains.
-2. **Meta-Projects** – Creating expansive, interrelated project structures.
-3. **Voluntary Participation** – Open access to contribute and collaborate.
-4. **Integration, not Reinvention** – Build on existing technologies and methods.
+1. **Holism** – Integration across all disciplines and domains.  
+2. **Meta-Projects** – Creating expansive, interrelated project structures.  
+3. **Voluntary Participation** – Open access to contribute and collaborate.  
+4. **Integration, not Reinvention** – Build on existing technologies and methods.  
 5. **Scalability** – Designed to support large, interdisciplinary growth.
 
 We invite collaborators to:
@@ -84,9 +94,7 @@ If you're interested in exploring AI as a **partner**, not just a **tool**, we w
 
 ---
 
-📚 This repository is also supported by CUNY Academic Works as a **living resource**—encouraging experimentation, interdisciplinary collaboration, and iterative learning.
+## 📚 Citation
 
-### Citation
-> Smith, David B., DMA & ChatGPT. (2025). *Collaborative-AI: Curriculum and materials for exploring AI as a partner rather than a tool*. Center for Holistic Integration / OpenAI. https://github.com/CHI-CityTech/Collaborative-AI
-
-> This resource was co-authored through an iterative conversation between human and AI contributors.
+> **Smith, David B., DMA & ChatGPT. (2025).** *Collaborative-AI: Curriculum and materials for exploring AI as a partner rather than a tool*. Center for Holistic Integration / OpenAI. https://github.com/CHI-CityTech/Collaborative-AI  
+> _This resource was co-authored through an iterative conversation between human and AI contributors._
