@@ -7,7 +7,7 @@ This resource provides a comprehensive and evolving set of materials for explori
 This Open Educational Resource is organized into three primary categories, each focused on a different mode of engagement with Collaborative AI. All supporting tools, templates, and repositories are nested within these categories.  
 1. [Curriculum : Teaching CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-1-curriculum-teaching-collaborative-ai)
 2. [Frameworks: Understanding CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-2-frameworks-understanding-collaborative-ai)
-3. [Applied Projects: Practicing CAI]([https://github.com/CHI-CityTech/Collaborative-AI/new/main#-2-frameworks-understanding-collaborative-ai)](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-3-applied-projects-practicing-collaborative-ai)
+3. [Applied Projects: Practicing CAI](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/Collaborative%20AI%20Resources.md#-3-applied-projects-practicing-collaborative-ai)
 
 In addition, as part of our call for participation, we provide a list of currwnt and proposed projects, each performaning an investigation into 
 
