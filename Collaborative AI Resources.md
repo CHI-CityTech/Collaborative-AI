@@ -36,7 +36,7 @@ Theoretical foundations that define how humans and artificial intelligences coll
 
 Real-world experiments and interdisciplinary collaborations where BBS theories are tested and developed further. These projects provide live environments for evaluating the effectiveness of mediation pathways, AI-human collaboration, and the BBS syntax in practice.
 
-#### ⚙️ A. System Design: Building the Blended Reality Performance System (BRPS)
+#### ⚙️ 3A. System Design: Building the Blended Reality Performance System (BRPS)
 
 The BRPS is an engineering and interaction-design project focused on building a seamless blended environment in which human and artificial intelligences co-perform across physical, virtual, and conceptual spaces.
 
@@ -45,7 +45,7 @@ The BRPS is an engineering and interaction-design project focused on building a 
 - Serves as a technical scaffold to support BBS-based content development
 - Repository: [Blended Reality Performance System (BRPS)](https://github.com/CHI-CityTech/Blended-Reality-Performance-System)
 
-#### 🎭 B. Content Development: Meta-Projects That Populate the System
+#### 🎭 3B. Content Development: Meta-Projects That Populate the System
 
 These creative and research-driven meta-projects generate performances, narratives, simulations, and soundscapes that rely on the BRPS as a delivery and blending mechanism.
 
@@ -69,21 +69,6 @@ These creative and research-driven meta-projects generate performances, narrativ
   A diverse and evolving collection of cross-disciplinary investigations and prototype efforts.  
   Repository: [Student Research](https://github.com/CHI-CityTech/StudentResearch)
 
-> 🔗 See also: [Spring 2025 Research Opportunities](https://github.com/CHI-CityTech/StudentResearch/discussions)
-
-
-
-
-
-
-
-
-
-
-
-- 
-
-
 ## 🌐 Collaboration, Meta-Projects & Expansion
 
 This Open Educational Resource is not just a collection of static materials that you can use within your own pedagogical efforts (although we strongly support you to use it in this way!)—it is an **invitation to participate** in an active, interdisciplinary investigation of Collaborative AI. In the spirit of the **Center for Holistic Integration (CHI)**, we welcome contributors from all disciplines to explore, expand, and co-develop the Balanced Blended Space (BBS) framework and its applications.
@@ -95,12 +80,6 @@ We encourage contributors to:
 - Extend or remix existing BBS-aligned projects  
 - Document their collaboration using GitHub Issues and versioned reflections  
 - Align their work with CHI's model of long-term, cross-semester integration  
-
-### 📌 Example Repositories:
-- 🎭 [Blended Shadow Puppet (BSP)](https://github.com/CHI-CityTech/Blended-Shadow-Puppet)  
-- 📚 [Student Research Meta-Project](https://github.com/CHI-CityTech/StudentResearch)  
-- 🧠 [AI Curriculum Repository](https://github.com/CHI-CityTech/AI-Curriculum) *(placeholder)*  
-- ⚙️ [Blended Reality Performance System (BRPS)](https://github.com/CHI-CityTech/Blended-Reality-Performance-System)  
 
 ### 🔗 Meta-Project Opportunities
 Explore ongoing and upcoming meta-projects in our  
