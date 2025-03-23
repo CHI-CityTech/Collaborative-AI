@@ -5,7 +5,7 @@ This resource provides a comprehensive and evolving set of materials for explori
 ## 📚 Collaborative AI – Top-Level Structure
 
 This Open Educational Resource is organized into three primary categories, each focused on a different mode of engagement with Collaborative AI. All supporting tools, templates, and repositories are nested within these categories.
-1. [Curriculum : Teaching CAI](https://github.com/CHI-CityTech/Collaborative-AI/edit/main/Collaborative%20AI%20Resources.md#-1-curriculum-teaching-collaborative-ai))
+1. [Curriculum : Teaching CAI](https://github.com/CHI-CityTech/Collaborative-AI/edit/main/Collaborative%20AI%20Resources.md#-1-curriculum-teaching-collaborative-ai)
 2. [Frameworks: Understanding CAI](https://github.com/CHI-CityTech/Collaborative-AI/new/main#-2-frameworks-understanding-collaborative-ai)  
 3. [Applied Projects: Practicing CAI](https://github.com/CHI-CityTech/Collaborative-AI/new/main#-2-frameworks-understanding-collaborative-ai)
 
