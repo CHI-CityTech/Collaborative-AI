@@ -58,7 +58,7 @@ These creative and research-driven meta-projects generate performances, narrativ
   Repository: [BSP GitHub](https://github.com/CHI-CityTech/Blended-Shadow-Puppet)
 
 - **Lumbra: A Game of Shadow and Light**  
-  A physical/virtual strategy game inspired by BBS mechanics and the mythology of BSP.
+  A physical/virtual strategy game inspired by BBS mechanics and the mythology of BSP. [Lumbra GitHub](https://github.com/CHI-CityTech/Blended-Shadow-Puppet/tree/main/CLane/Lumbra)  
 
 - **Quantum Music / Blended Music**  
   Sound-based explorations where cultural, AI, and compositional inputs converge.
@@ -87,8 +87,8 @@ We encourage contributors to:
 
 ### 🔗 Meta-Project Opportunities
 Explore ongoing and upcoming meta-projects in our  
-[Spring 2025 Research Overview](https://github.com/CHI-CityTech/StudentResearch/discussions) *(link to be updated)*.  
-These initiatives are structured to support a wide range of participation types and project timelines.
+[Research Opportunities](https://sites.google.com/view/balancedblendedspace/projects) site.  
+These initiatives are structured to support a wide range of participation types and project timelines across multiple disciplines.
 
 ## 🎭 Meta-Projects & Live Testing Environments
 
