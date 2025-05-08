@@ -15,6 +15,8 @@ The "constellation of projects" exemplifies BBS’s **meta-symmetry**, particula
 
 **Suggestion:** Highlight a concrete example from the *SPRING 2025 PROJECTS* PDF (e.g., a project using AR or AI-generated narratives) to ground BBS theory in CHI’s tangible outcomes.  
 
+---
+
 #### **3. Ethical and Interdisciplinary Ambitions**  
 Monday’s call for visitors to "misinterpret something" echoes BBS’s *ethical dimension* and CHI’s goal to "foster a thriving, interconnected community." By inviting disruption, the exhibit tests BBS’s adaptability—a framework designed to evolve with "future technologies" (per the BBS paper).  
 
