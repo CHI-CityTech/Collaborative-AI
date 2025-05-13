@@ -1,12 +1,18 @@
 # Diffusion & ControlNet Module Setup (Collaborative AI)
 
-## Overview
+# Overview
 
 This guide explains how to add Stable Diffusion and ControlNet functionality to your existing Collaborative AI development environment. It assumes you have already completed the base setup as described in the [Mac AI Development Environment Guide](mac_ai_dev_environment_setup.md).
+
+## ![HuggingFace Logo](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)About HuggingFace
+
+
+[HuggingFace](https://huggingface.co/) is a central hub for open-source AI models and tooling. They provide accessible APIs, pre-trained models, and libraries like Diffusers and Transformers that have democratized access to powerful generative AI models such as Stable Diffusion. HuggingFace's contributions enable developers to integrate state-of-the-art AI capabilities with minimal setup, fostering innovation and collaboration across the AI community.
 
 ## 1. Install Diffusion and ControlNet Packages
 
 Install the necessary Python packages for Stable Diffusion and ControlNet workflows.
+![Stability AI Logo](https://www.bigdatawire.com/wp-content/uploads/2022/10/stability-ai.jpg)
 
 * **[diffusers](https://huggingface.co/docs/diffusers/index)**: HuggingFace library for running Stable Diffusion models.
 * **[transformers](https://huggingface.co/docs/transformers/index)**: Tokenizer models and LLM utilities.
