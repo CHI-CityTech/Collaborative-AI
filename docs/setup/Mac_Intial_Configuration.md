@@ -55,18 +55,13 @@ source .venv/bin/activate
 
 ## 5. Install Essential Python Packages
 
-* **[diffusers](https://huggingface.co/docs/diffusers/index)**: HuggingFace library for running Stable Diffusion models.
-* **[transformers](https://huggingface.co/docs/transformers/index)**: HuggingFace library for LLMs and tokenizers.
-* **[accelerate](https://huggingface.co/docs/accelerate/index)**: Optimizes training and inference across hardware.
-* **[controlnet\_aux](https://github.com/lllyasviel/ControlNet)**: Utilities for ControlNet conditioning (pose, depth, etc).
-* **[torch & torchvision](https://pytorch.org/)**: Core PyTorch libraries for tensor computations.
+(Section moved to diffusion\_controlnet\_setup.md)
 
-```zsh
-pip install --upgrade pip
-pip install diffusers[torch] transformers accelerate
-pip install git+https://github.com/huggingface/controlnet_aux.git
-pip install torch==2.2.0 torchvision --index-url https://download.pytorch.org/whl/cpu
-```
+This section has been moved to a project-specific guide for Stable Diffusion and ControlNet setup. Please refer to:
+
+**[docs/setup/diffusion\_controlnet\_setup.md](docs/setup/diffusion_controlnet_setup.md)**
+
+for instructions on installing diffusers, transformers, accelerate, controlnet\_aux, and related libraries.
 
 ## 6. Install GitHub CLI
 
@@ -82,8 +77,33 @@ Authenticate:
 gh auth login
 ```
 
-## 7. Install Visual Studio Code Extensions
+## 7. Install Visual Studio Code Extensions and GitHub Copilot
 
+These extensions enhance development efficiency:
+
+* **Python**: Syntax highlighting, linting, debugging.
+* **[GitLens](https://gitlens.amod.io/)**: Visualizes Git history and blame.
+* **Jupyter**: Run notebooks directly.
+* **Markdown All in One**: Live preview and formatting.
+* **Remote - SSH**: Optional for remote dev.
+
+### Install GitHub Copilot
+
+* **[GitHub Copilot](https://github.com/features/copilot)**: AI-powered code completion and suggestion tool integrated into VS Code.
+
+To install:
+
+1. Open Visual Studio Code.
+2. Go to Extensions (Cmd+Shift+X).
+3. Search for "GitHub Copilot" and click Install.
+
+Authenticate using your GitHub account when prompted.
+
+### Does GitHub Copilot Have an API?
+
+GitHub Copilot is primarily designed as an in-editor coding assistant. While it integrates with VS Code and other IDEs, it does not currently offer a public API for external programmatic access like OpenAI's ChatGPT API. Interaction with Copilot happens within the editor environment.
+
+However, integrating GitHub Copilot into your development environment ensures consistency in coding assistance across your Collaborative AI projects.
 These enhance development efficiency:
 
 * **Python**: Syntax highlighting, linting, debugging.
@@ -120,13 +140,38 @@ Collaborative-AI/
 
 ## 10. Run a Test Inference (Diffusion)
 
-Test your pose-guided image generation pipeline.
+(Section moved to diffusion\_controlnet\_setup.md)
+
+Instructions for running a pose-guided image generation pipeline have been moved to the project-specific guide:
+
+**[docs/setup/diffusion\_controlnet\_setup.md](docs/setup/diffusion_controlnet_setup.md)**
+
+## 11. GitHub Desktop and Visual Studio Code Workflow
+
+**GitHub Desktop** is a graphical interface that helps you manage your Git repositories. While it does not display individual files for editing, it allows you to:
+
+* Clone repositories from GitHub.
+* View and manage changes, branches, and commit history.
+* Stage changes and sync with GitHub.
+
+For actual file navigation and editing, you'll use **Visual Studio Code (VSC)**. VSC provides:
+
+* File explorer to browse your project directory.
+* Advanced code editing with syntax highlighting, linting, and debugging.
+* Integrated terminal for running commands within the project directory.
+
+### Typical Workflow:
+
+1. Clone the repository using GitHub Desktop.
+2. Use GitHub Desktop's **"Open in Visual Studio Code"** to launch the project.
+3. Edit, navigate, and develop in VSC.
+4. Switch back to GitHub Desktop to stage, commit, and push your changes.
+
+This separation of tools keeps version control and code editing organized and efficient.
 
 ```zsh
-python src/models/diffusion/diffusion_pipeline.py --prompt "A vintage illustration of a red-haired princess" --pose_image path/to/pose_reference.png
+brew install --cask github
 ```
-
-## 11. Optional: GitHub Desktop
 
 For users preferring a visual Git interface.
 
