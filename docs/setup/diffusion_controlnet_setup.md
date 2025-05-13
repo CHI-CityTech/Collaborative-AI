@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide explains how to add Stable Diffusion and ControlNet functionality to your existing Collaborative AI development environment. It assumes you have already completed the base setup as described in the [Mac AI Development Environment Guide](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/docs/setup/Mac_Intial_Configuration.md).
+This guide explains how to add Stable Diffusion and ControlNet functionality to your existing Collaborative AI development environment. It assumes you have already completed the base setup as described in the [Mac AI Development Environment Guide](mac_ai_dev_environment_setup.md).
 
 ## 1. Install Diffusion and ControlNet Packages
 
@@ -20,13 +20,17 @@ pip install diffusers[torch] transformers accelerate
 pip install git+https://github.com/huggingface/controlnet_aux.git
 ```
 
-For Apple Silicon:
+### Important for Apple Silicon Users (M1/M2/M3)
+
+After installing the packages above, Apple Silicon (M1, M2, M3) users must re-install **torch** and **torchvision** with the correct build to ensure compatibility with their architecture. This step replaces the default x86 PyTorch build with an Apple Silicon-optimized version.
 
 ```bash
 pip install torch==2.2.0 torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
 
-(Or MPS builds if GPU acceleration is desired.)
+(Or use MPS builds if GPU acceleration is desired.)
+
+This command should be run **after** the initial package installation to ensure the correct version of PyTorch is used.
 
 ## 2. Download Models
 
@@ -44,13 +48,16 @@ huggingface-cli download lllyasviel/ControlNet-v1-1 --local-dir models/diffusion
 
 # ControlNet OpenPose Model
 
+```bash
 huggingface-cli download lllyasviel/ControlNet-v1-1 --local-dir models/diffusion/controlnet
 
 ```
 
 ## 3. Folder Structure Expectation
-```
 
+Use a fenced code block with triple backticks and specify `plaintext` to ensure proper display without markdown interpretation issues.
+
+```plaintext
 Collaborative-AI/
 ├── models/
 │   └── diffusion/
@@ -59,11 +66,9 @@ Collaborative-AI/
 ├── src/
 │   └── models/
 │       └── diffusion/
-│           ├── diffusion\_pipeline.py
-│           ├── controlnet\_adapter.py
+│           ├── diffusion_pipeline.py
+│           ├── controlnet_adapter.py
 │           └── utils.py
-
-```
 ```
 
 ## 4. Run a Pose-Guided Generation Test
