@@ -2,7 +2,7 @@
 
 # Overview
 
-This guide explains how to add Stable Diffusion and ControlNet functionality to your existing Collaborative AI development environment. It assumes you have already completed the base setup as described in the [Mac AI Development Environment Guide](mac_ai_dev_environment_setup.md).
+This guide explains how to add Stable Diffusion and ControlNet functionality to your existing Collaborative AI development environment. It assumes you have already completed the base setup as described in the [Mac AI Development Environment Guide](https://github.com/CHI-CityTech/Collaborative-AI/blob/main/docs/setup/diffusion%20setup/Mac_Intial_Configuration.md).
 
 ## ![HuggingFace Logo](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)About HuggingFace
 
