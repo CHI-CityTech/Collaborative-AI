@@ -1,4 +1,4 @@
-This folder stores setup informaiton and instructions in how to create a diffusion pathway using 
+This folder stores setup information and instructions in how to create a diffusion pathway using 
 
 **Homebrew Install Dependencies**  
 - This document explains why certain dependencies are installed when setting up core development tools like git and wget via Homebrew.
