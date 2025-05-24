@@ -1,71 +1,80 @@
 # Mac AI Development Environment Setup Guide (Collaborative AI)
 
+*Last updated: 2025-05-24*
+
 ## Overview
 
-This guide outlines how to configure a Mac (M1/M2/M3 preferred) for AI development, specifically for Collaborative AI projects involving Stable Diffusion, ControlNet, LLMs, and GitHub-based workflows. Each step includes an explanation of why the tool or package is needed and includes links for further reference.
+This guide outlines how to configure a Mac (M1/M2/M3/M4 preferred) for AI development, specifically for Collaborative AI projects involving Stable Diffusion, ControlNet, LLMs, and GitHub-based workflows. Each step includes an explanation of why the tool or package is needed and includes links for further reference.
 
 ## 1. Prerequisites
 
-* macOS 12.3+ (Ventura/Sonoma recommended)
-* Apple Silicon (M1/M2/M3) or Intel Mac (slower for AI workloads)
+**Recommended macOS Versions:**
+
+* ✅ **macOS Sequoia (15.x)** – Preferred for latest support and compatibility with modern AI libraries.
+* ✅ **macOS Sonoma (14.x)** – Still fully supported.
+* ⚠️ **macOS Ventura (13.x)** – Mostly compatible, but some tools may require workarounds.
+* ❌ **macOS Monterey (12.x)** or earlier – Not recommended due to toolchain limitations.
+
+**Apple Hardware Compatibility:**
+
+* ✅ **Apple Silicon (M1/M2/M3/M4)** – Fully compatible. M4 introduces the Apple Neural Engine (ANE) with improved performance for on-device inference, but support in most open-source AI toolchains is still evolving. Expect broader benefits in Core ML-optimized pipelines or future Metal-accelerated workflows; for now, M1–M4 perform similarly under PyTorch + MPS unless explicitly optimized. M4 support is still stabilizing across libraries, but generally expected to perform well.
+* ⚠️ **Intel Macs** – Functional but significantly slower for machine learning tasks and lacking GPU acceleration support (e.g., Metal/MPS).
+*
 
 ## 2. Install Homebrew (macOS Package Manager)
 
-Homebrew is the standard package manager for macOS, simplifying the installation of development tools.
+[Homebrew](https://brew.sh/) simplifies installation of development tools on macOS.
 
-* **Homebrew website**: [https://brew.sh/](https://brew.sh/)
-
-It allows you to install, update, and manage packages and applications via the command line.
+> **Note:** Even if you already have some tools (like Git or Python) installed, running Homebrew commands will ensure you have the most up-to-date, stable, and properly linked versions. This helps avoid conflicts between pre-installed macOS versions and developer-ready environments managed through Homebrew.
 
 ```zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## 3. Install Core Development Tools
+---
 
-* **[git](https://git-scm.com/)**: Essential for version control and collaboration.
-* **[python@3.10](https://www.python.org/)**: Required version for compatibility with AI libraries.
-* **[wget](https://www.gnu.org/software/wget/)**: Useful for downloading models and assets.
-* **[Visual Studio Code](https://code.visualstudio.com/)**: Recommended IDE for code editing.
-* **[iTerm2](https://iterm2.com/)**: Enhanced terminal emulator for macOS.
-* **[GitHub Desktop](https://desktop.github.com/)**: Visual interface for Git, useful for beginners.
+## 3. Install Core System Tools
+
+These are foundational packages for development:
 
 ```zsh
-brew install git python@3.10 wget
+brew install git python@3.11 wget
 brew install --cask visual-studio-code
 brew install --cask iterm2
 brew install --cask github
 ```
 
-## 4. Configure Python Environment
+* **git**: Version control
+* **python\@3.11**: Preferred version for performance and compatibility with modern AI libraries
+* **wget**: Used to download models and datasets
+* **Visual Studio Code**: IDE of choice
+* **iTerm2**: Enhanced terminal
+* **GitHub Desktop**: Optional GUI for Git
 
-Python 3.10.x is required for compatibility with Stable Diffusion and related libraries.
+## 4. Python Environment Setup
+
+> **Why Python 3.11?**
+> 💡 *Note:* Python 3.12 is also supported by major AI libraries, and offers comparable or slightly better performance than 3.11. However, Python 3.11 remains the default recommendation due to broader ecosystem stability, community adoption, and toolchain compatibility. This guide will be updated once 3.12 becomes more widely standardized across all platforms.
+> Python 3.10 was long the default for AI/ML workflows due to its broad compatibility. However, as of 2025, Python 3.11 (and 3.12) is fully supported by all major AI libraries—including PyTorch 2.x, TensorFlow 2.13+, and Hugging Face's `diffusers` and `transformers`. Python 3.11 introduces significant performance gains thanks to adaptive interpreter optimizations and improved memory efficiency. Unless you are working with legacy code or pinned environments, Python 3.11 is now the best default choice for most users. You can test compatibility in a virtual environment before migrating fully.
+
+Check installation:
 
 ```zsh
-brew install python@3.10
-python3.10 --version
+python3.11 --version
 ```
 
-Virtual environments isolate dependencies, ensuring project-specific configurations.
+Set up a virtual environment:
 
 ```zsh
-python3.10 -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
 ```
 
-## 5. Install Essential Python Packages
+---
 
-(Section moved to diffusion\_controlnet\_setup.md)
+## 5. Install GitHub CLI
 
-This section has been moved to a project-specific guide for Stable Diffusion and ControlNet setup. Please refer to:
-
-**[docs/setup/diffusion\_controlnet\_setup.md](docs/setup/diffusion_controlnet_setup.md)**
-
-for instructions on installing diffusers, transformers, accelerate, controlnet\_aux, and related libraries.
-
-## 6. Install GitHub CLI
-
-* **[GitHub CLI](https://cli.github.com/)**: Allows interaction with GitHub from the terminal (issues, PRs, authentication).
+Interact with GitHub from the terminal.
 
 ```zsh
 brew install gh
@@ -77,44 +86,54 @@ Authenticate:
 gh auth login
 ```
 
-## 7. Install Visual Studio Code Extensions and GitHub Copilot
+This will prompt you to choose a login method (usually via browser), select your GitHub account, and grant permissions. Follow the on-screen instructions until authentication completes. Once authenticated, you'll be able to push, clone, and manage repositories from the command line using `gh` commands.
 
-These extensions enhance development efficiency:
+---
 
-* **Python**: Syntax highlighting, linting, debugging.
-* **[GitLens](https://gitlens.amod.io/)**: Visualizes Git history and blame.
-* **Jupyter**: Run notebooks directly.
-* **Markdown All in One**: Live preview and formatting.
-* **Remote - SSH**: Optional for remote dev.
+## 6. Install Visual Studio Code Extensions and GitHub Copilot
 
-### Install GitHub Copilot
+### Install GitHub Desktop (Optional)
 
-* **[GitHub Copilot](https://github.com/features/copilot)**: AI-powered code completion and suggestion tool integrated into VS Code.
+[GitHub Desktop](https://desktop.github.com/) is a graphical interface for Git and GitHub workflows. It’s especially useful for users who prefer a visual approach to cloning, branching, and committing, rather than using Git in the terminal.
 
 To install:
 
-1. Open Visual Studio Code.
-2. Go to Extensions (Cmd+Shift+X).
-3. Search for "GitHub Copilot" and click Install.
+```zsh
+brew install --cask github
+```
 
-Authenticate using your GitHub account when prompted.
+Once installed:
 
-### Does GitHub Copilot Have an API?
+1. Open the GitHub Desktop app.
+2. Sign in to your GitHub account.
+3. Clone repositories or manage branches and commits visually.
 
-GitHub Copilot is primarily designed as an in-editor coding assistant. While it integrates with VS Code and other IDEs, it does not currently offer a public API for external programmatic access like OpenAI's ChatGPT API. Interaction with Copilot happens within the editor environment.
+To install these extensions:
 
-However, integrating GitHub Copilot into your development environment ensures consistency in coding assistance across your Collaborative AI projects.
-These enhance development efficiency:
+1. Open **Visual Studio Code**.
+2. Press `Cmd+Shift+X` (or click the Extensions icon in the Activity Bar).
+3. Search for each extension by name (e.g., "Python", "GitLens") and click **Install**.
 
-* **Python**: Syntax highlighting, linting, debugging.
-* **[GitLens](https://gitlens.amod.io/)**: Visualizes Git history and blame.
-* **Jupyter**: Run notebooks directly.
-* **Markdown All in One**: Live preview and formatting.
-* **Remote - SSH**: Optional for remote dev.
+Recommended extensions:
 
-## 8. Clone Collaborative AI Repository
+* **Python** – Adds syntax highlighting, debugging, linting, and IntelliSense for Python development.
+* **[GitLens](https://gitlens.amod.io/)** – Enhances Git integration in VS Code by showing commit history, authorship, and inline blame annotations.
+* **Jupyter** – Enables interactive notebooks (.ipynb) directly within VS Code, great for prototyping and data exploration.
+* **Markdown All in One** – Provides Markdown live preview, formatting tools, and shortcuts for technical writing.
+* **Remote - SSH (optional)** – Allows you to connect to and develop on remote servers or cloud instances directly through VS Code.
 
-This pulls down the project codebase for local development.
+### GitHub Copilot
+
+[GitHub Copilot](https://github.com/features/copilot) provides AI code completions directly in VS Code.
+
+* Install via VS Code’s extension panel (Cmd+Shift+X)
+* Authenticate with your GitHub account
+
+**Note:** Copilot does not have a public API—it's integrated only through supported editors.
+
+---
+
+## 7. Clone Collaborative AI Repository
 
 ```zsh
 cd ~/Projects
@@ -122,11 +141,9 @@ git clone https://github.com/your-org/Collaborative-AI.git
 cd Collaborative-AI
 ```
 
-## 9. Project Folder Structure
+## 8. Project Folder Structure
 
-Organizes code, docs, collaborations, and tests for clarity and scalability.
-
-```
+```plaintext
 Collaborative-AI/
 ├── src/            # Source code (diffusion, llm, services)
 ├── docs/           # Setup guides, architecture docs
@@ -138,84 +155,60 @@ Collaborative-AI/
 └── requirements.txt
 ```
 
-## 10. Run a Test Inference (Diffusion)
+---
 
-(Section moved to diffusion\_controlnet\_setup.md)
+## 9. GitHub Desktop and VS Code Workflow
 
-Instructions for running a pose-guided image generation pipeline have been moved to the project-specific guide:
+**GitHub Desktop**: Visual Git manager for clones, commits, and pushes.
+**Visual Studio Code**: Primary editor with Git integration.
 
-**[docs/setup/diffusion\_controlnet\_setup.md](docs/setup/diffusion_controlnet_setup.md)**
+Typical workflow:
 
-## 11. GitHub Desktop and Visual Studio Code Workflow
+1. Clone repo with GitHub Desktop
+2. Open project in VS Code
+3. Edit & develop
+4. Stage and commit in GitHub Desktop
 
-**GitHub Desktop** is a graphical interface that helps you manage your Git repositories. While it does not display individual files for editing, it allows you to:
+---
 
-* Clone repositories from GitHub.
-* View and manage changes, branches, and commit history.
-* Stage changes and sync with GitHub.
+## 10. Version Control Workflow (CLI)
 
-For actual file navigation and editing, you'll use **Visual Studio Code (VSC)**. VSC provides:
-
-* File explorer to browse your project directory.
-* Advanced code editing with syntax highlighting, linting, and debugging.
-* Integrated terminal for running commands within the project directory.
-
-### Typical Workflow:
-
-1. Clone the repository using GitHub Desktop.
-2. Use GitHub Desktop's **"Open in Visual Studio Code"** to launch the project.
-3. Edit, navigate, and develop in VSC.
-4. Switch back to GitHub Desktop to stage, commit, and push your changes.
-
-This separation of tools keeps version control and code editing organized and efficient.
+Basic Git commands:
 
 ```zsh
-brew install --cask github
-```
-
-For users preferring a visual Git interface.
-
-```zsh
-brew install --cask github
-```
-
-## 12. Version Control Workflow (CLI)
-
-Basic Git commands for collaboration and version tracking.
-
-```zsh
-# Check status
 git status
-
-# Create feature branch
-git checkout -b feature/diffusion-controlnet
-
-# Stage, commit, push
+git checkout -b feature/branch-name
 git add .
-git commit -m "Add diffusion pipeline adapter"
-git push -u origin feature/diffusion-controlnet
+git commit -m "Add feature"
+git push -u origin feature/branch-name
 ```
 
-## 13. Useful Tools
+---
 
-* **[Oh My Zsh](https://ohmyz.sh/)**: Enhanced terminal experience with git-aware prompts.
-* **[Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/quick-start)**: Model management and uploads.
-* **[ControlNet Models](https://huggingface.co/lllyasviel/ControlNet-v1-1)**: Download pose/depth conditioning models.
+## 11. Useful Tools
 
-## Result
+* [Oh My Zsh](https://ohmyz.sh/): Better terminal experience
+* [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/quick-start): For model download/upload
+* [ControlNet Models](https://huggingface.co/lllyasviel/ControlNet-v1-1): Conditioning models for inference
 
-You now have a fully configured macOS AI development environment ready for Collaborative AI workflows involving Stable Diffusion, ControlNet, and GitHub-based team collaboration.
+---
+
+## 12. Next Steps: Install Project-Specific Toolkits
+
+To install Stable Diffusion and ControlNet support, see:
+👉 [docs/setup/diffusion\_controlnet\_setup.md](docs/setup/diffusion_controlnet_setup.md)
+
+Other modules (e.g. LLMs, Music, Pose Inference) will follow similar patterns and link to their own modular setup guides.
+
+---
 
 ## References
 
-* [https://brew.sh/](https://brew.sh/)
-* [https://huggingface.co/docs/diffusers/index](https://huggingface.co/docs/diffusers/index)
-* [https://github.com/AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-* [https://ohmyz.sh/](https://ohmyz.sh/)
-* [https://code.visualstudio.com/](https://code.visualstudio.com/)
-* [https://cli.github.com/](https://cli.github.com/)
-* [https://git-scm.com/](https://git-scm.com/)
-* [https://huggingface.co/docs/transformers/index](https://huggingface.co/docs/transformers/index)
-* [https://huggingface.co/docs/accelerate/index](https://huggingface.co/docs/accelerate/index)
-* [https://pytorch.org/](https://pytorch.org/)
-* [https://github.com/lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)
+* [Homebrew](https://brew.sh/)
+* [Python](https://www.python.org/)
+* [Git](https://git-scm.com/)
+* [VS Code](https://code.visualstudio.com/)
+* [GitHub CLI](https://cli.github.com/)
+* [Hugging Face](https://huggingface.co/docs/diffusers/index)
+* [PyTorch](https://pytorch.org/)
+* [ControlNet GitHub](https://github.com/lllyasviel/ControlNet)
